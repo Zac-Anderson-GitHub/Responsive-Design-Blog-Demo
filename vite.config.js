@@ -1,7 +1,14 @@
-import { defineConfig } from "vite";
+import { defineConfig } from 'vite';
+import { resolve } from 'path';
 
 export default defineConfig({
-  plugins: [
-    // Remove the viteStaticCopy code
-  ]
+  build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+        about: resolve(__dirname, 'about.html'),
+        article: resolve(__dirname, 'article.html')
+      }
+    }
+  }
 });
