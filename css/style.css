@@ -1,0 +1,322 @@
+body {
+    font-family: "Source Sans 3", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+}
+
+header {
+    background-color: #FFFFFF;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 1.25em;
+    color: #0E0E0E;
+}
+
+.header-container span {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 0.875em;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 23px;
+    margin-right: 0.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 1.2em;
+}
+
+nav ul li {
+    margin-left: 1em;
+    font-weight: bold;
+    font-size: 0.75em;
+}
+
+nav ul li a {
+    color: #0E0E0E;;
+    text-decoration: none;
+}
+
+.main-article {
+    position: relative;
+    text-align: left;
+    color: white;
+    overflow: hidden; /* Prevent overflow */
+    min-height: 300px; /* Ensures there’s always space for content */
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-article img {
+    width: 100%;
+    min-height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.article-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; /* Stretch to full width */
+    padding: 1.5em;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2.25em;
+    font-weight: bold;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+.article-header {
+    font-size: 2.5em;
+}
+
+.article-info {
+    font-size: 1em;
+    margin-top: 0em;
+}
+
+.date {
+    font-size: 0.8em;
+}
+
+.other-posts {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding: 1em;
+}
+
+
+.post {
+    text-align: center;
+    color: black;
+}
+
+.post img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.post-text {
+    padding: 1em;
+    background: none; /* Remove background */
+    color: black; /* Set font color to black */
+    text-align: left; /* Align text to the left */
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.view-more {
+    text-align: center;
+    margin: 2em 0;
+}
+
+
+
+.view-more a {
+    text-decoration: underline;
+    color: #0E0E0E;
+}
+
+.footer-container {
+    background-color: #202020;
+    font-size: 0.75em;
+    height: 105px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1875em;
+}
+
+.footer-title .footer-copyright {
+    width: fit-content;
+}
+
+.footer-title {
+    color: #ECECEC;
+    font-weight: bold;
+}
+
+.footer-copyright {
+    color: #D7D7D7;
+}
+
+/* for main article page titled "feature" */
+
+.feature {
+    min-height: 300px; /* Ensures there’s always space for content */
+    margin: 0em;
+    padding: 1.25em;
+}
+
+.feature-header {
+    margin-bottom: 0em;
+}
+
+.feature-info {
+    margin-top: 1em;
+}
+
+.feature-text {
+    color: black;
+}
+
+.feature-img {
+    width: 100%;
+    min-height: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 0.25em;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+
+.feature-par {
+    margin-bottom: 1.5em;
+}
+
+.recent-posts {
+    text-align: center;
+    margin-top: 0em
+}
+
+/* For about page */
+
+
+.about-header {
+    font-size: 2.1875em;
+    font-weight: bold;
+    margin-top: 0.75em;
+}
+
+.about-info {
+    margin-bottom: 3.125em;
+}
+
+.profile-pic {
+    width: 182px;
+    height: 182px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+
+.profile-pic img {
+    width: 230px;
+    object-fit: cover;
+    position: absolute;
+    top: -45px;
+    left: -20px;
+    opacity: 0.9
+}
+
+/* Responsive Design */
+
+@media (min-width: 768px) {
+    
+    /* for homepage */
+    
+    .header-container {
+        margin: 0 3.31em 0 3.31em;
+        padding: 1.5em;
+    }
+    
+    .header-container span {
+        font-size: 1.25em;
+    }
+    
+    nav ul li {
+        font-size: 1em;
+    }
+    
+    .other-posts {
+        margin: 0 3.31em 0 3.31em;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1em;
+        padding: 1em 0;
+    }
+    
+    .article-text {
+        margin: 0 3.31em 0 3.31em;
+        padding: 1em;
+    }
+    
+    .article-info {
+        max-width: 650px;
+    }
+    
+    /* for main article page titled "feature" */
+    
+    .feature {
+        margin: 0 3.31em 0 3.31em;
+    }
+    
+    .feature-info {
+        margin-top: 1.68em;
+    }
+    
+    .feature-text {
+        margin: 0 3.31em 0 3.31em;
+    }
+    
+    .feature-par {
+        margin: 0 3.31em 0 3.31em;
+    }
+    
+    .recent-posts {
+        font-size: 1.5em;
+        margin-bottom: 1.75em;
+        margin-top: 3.125em;
+    }
+    
+    .par-body {
+        margin-bottom: 0px;
+    }
+    
+    /* for About page */
+    
+    .about-header-wide {
+        display: flex;
+        gap: 2em;
+        margin-top: 5.68em;
+    }
+    
+    .about-header-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .profile-pic {
+        min-width: 182px;
+        margin-bottom: 4em;
+    }
+    
+}
