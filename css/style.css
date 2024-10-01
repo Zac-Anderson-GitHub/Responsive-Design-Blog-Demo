@@ -84,7 +84,9 @@ h1 {
     font-size: 2.25em;
     font-weight: bold;
     margin-top: 0.25em;
-    margin-bottom: 0.25em;
+    margin-bottom: 0;
+    line-height: 1em;
+    
 }
 
 .article-header {
@@ -93,7 +95,7 @@ h1 {
 
 .article-info {
     font-size: 1em;
-    margin-top: 0em;
+    margin-top: 1em;
 }
 
 .date {
@@ -173,14 +175,6 @@ h2 {
     min-height: 300px; /* Ensures there’s always space for content */
     margin: 0em;
     padding: 1.25em;
-}
-
-.feature-header {
-    margin-bottom: 0em;
-}
-
-.feature-info {
-    margin-top: 1em;
 }
 
 .feature-text {
@@ -280,7 +274,7 @@ h2 {
     }
     
     .feature-info {
-        margin-top: 1.68em;
+        margin-top: 1.5em;
     }
     
     .feature-text {
