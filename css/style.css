@@ -61,6 +61,7 @@ nav ul li a {
     overflow: hidden; /* Prevent overflow */
     min-height: 300px; /* Ensures there’s always space for content */
     margin: 0px;
+    margin-bottom: 1.5em;
     padding: 0px;
 }
 
@@ -106,7 +107,7 @@ h1 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1em;
-    padding: 1em;
+    padding: 1.5em;
 }
 
 
@@ -122,7 +123,7 @@ h1 {
 }
 
 .post-text {
-    padding: 1em;
+    padding: 1em 0em;
     background: none; /* Remove background */
     color: black; /* Set font color to black */
     text-align: left; /* Align text to the left */
@@ -174,7 +175,8 @@ h2 {
 .feature {
     min-height: 300px; /* Ensures there’s always space for content */
     margin: 0em;
-    padding: 1.25em;
+    margin-top: 2em;
+    padding: 1.5em;
 }
 
 .feature-text {
@@ -197,7 +199,7 @@ h2 {
 
 .recent-posts {
     text-align: center;
-    margin-top: 0em
+    margin: 0em;
 }
 
 /* For about page */
@@ -238,7 +240,7 @@ h2 {
     /* for homepage */
     
     .header-container {
-        margin: 0 3.31em 0 3.31em;
+        margin: 0 2em;
         padding: 1.5em;
     }
     
@@ -249,17 +251,20 @@ h2 {
     nav ul li {
         font-size: 1em;
     }
+
+    .main-article {
+        margin-bottom: 2em;
+    }
     
     .other-posts {
-        margin: 0 3.31em 0 3.31em;
+        margin: 0 2em;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 1em;
-        padding: 1em 0;
+        gap: 1.5em;
     }
     
     .article-text {
-        margin: 0 3.31em 0 3.31em;
+        margin: 0 2em;
         padding: 1em;
     }
     
@@ -270,7 +275,7 @@ h2 {
     /* for main article page titled "feature" */
     
     .feature {
-        margin: 0 3.31em 0 3.31em;
+        margin: 3em 2em;
     }
     
     .feature-info {
@@ -278,17 +283,17 @@ h2 {
     }
     
     .feature-text {
-        margin: 0 3.31em 0 3.31em;
+        margin: 0 2em;
     }
     
     .feature-par {
-        margin: 0 3.31em 0 3.31em;
+        margin: 0 2em;
     }
     
     .recent-posts {
         font-size: 1.5em;
-        margin-bottom: 1.75em;
-        margin-top: 3.125em;
+        margin-bottom: 0.5em;
+        margin-top: 0;
     }
     
     .par-body {
@@ -300,7 +305,6 @@ h2 {
     .about-header-wide {
         display: flex;
         gap: 2em;
-        margin-top: 5.68em;
     }
     
     .about-header-container {
